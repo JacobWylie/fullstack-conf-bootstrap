@@ -6,3 +6,12 @@
 	width: 70%;
 	margin: 0 auto;
 }
+
+.list-group-item {
+	color: black;
+}
+
+.speaker {
+	font-size: 1.15rem ;
+	font-weight: normal;
+}
