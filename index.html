@@ -38,7 +38,7 @@
     <!-- Jumbotron -->
     <div class="jumbotron jumbotron-fluid bg-primary text-white">
       <div class="container text-sm-center pt-5">
-        <h1 class="display-2">Full Stack Attack</h1>
+        <h1 class="display-1">Full Stack Attack</h1>
         <p class="lead">A One-Day Conference About All Things JavaScript!</p>
         <div class="btn-group mt-5" role="group" aria-label="Basic example">
           <button type="button" class="btn btn-success btn-lg" data-toggle="modal" data-target="#registerModal">Register Now</button>
@@ -47,7 +47,7 @@
       </div> <!-- /Container -->
     </div> <!-- /Jumbotron -->
 
-    <div class="container pt-3">
+    <div class="container pt-2">
 
       <!-- About -->
         <div id="about" class="col-md-10 offset-md-1 text-center my-5">
@@ -217,18 +217,18 @@
             </li>
             <!-- Drop Down Button -->            
             <li class="nav-item">
-            <div class="btn-group dropup">
-              <button type="button" class="btn btn-secondary">More Conferences</button>
-              <button type="button" class="btn btn-secondary dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                <span class="sr-only">Toggle Dropdown</span>
-              </button>
-              <div class="dropdown-menu">
-                <a class="dropdown-item" href="#">Sassy Scss</a>
-                <a class="dropdown-item" href="#">Angular Wrangler</a>
-                <a class="dropdown-item" href="#">Git Fit</a>
-                <a class="dropdown-item" href="#">Meteor Madness</a>
+              <div class="btn-group dropup">
+                <button type="button" class="btn btn-secondary">More Conferences</button>
+                <button type="button" class="btn btn-secondary dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  <span class="sr-only">Toggle Dropdown</span>
+                </button>
+                <div class="dropdown-menu">
+                  <a class="dropdown-item" href="#">Sassy Scss</a>
+                  <a class="dropdown-item" href="#">Angular Wrangler</a>
+                  <a class="dropdown-item" href="#">Git Fit</a>
+                  <a class="dropdown-item" href="#">Meteor Madness</a>
+                </div>
               </div>
-            </div>
             </li> <!-- /Drop Down Button -->
           </ul>
         </div>
@@ -246,20 +246,36 @@
       <div class="modal-dialog" role="document">
         <div class="modal-content">
           <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel">Register for Full Stack Attack</h5>
+            <h3 class="modal-title" id="exampleModalLabel">Register for Full Stack Attack</h3>
             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
               <span aria-hidden="true">&times;</span>
             </button>
           </div>
           <div class="modal-body">
-            <p>Form Goes Here</p>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-            <button type="button" class="btn btn-primary">Save changes</button>
-          </div>
-        </div>
-      </div>
+            <!-- Registration Form -->
+            <form>
+              <h4 class="mb-3">Basic Info</h4>
+              <div class="form-group">
+                <label for="name">Name:</label>
+                <div class="">
+                  <input class="form-control" type="text" placeholder="John Doe" id="name">
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="email">Email:</label>
+                <div class="">
+                  <input class="form-control" type="email" placeholder="email@example.com" id="email">
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="role">Job Role:</label>
+                <select class="form-control" id="role" name="user-role"></select>
+              </div>
+            </form> <!-- /Registration Form -->
+
+          </div> <!-- /Modal Body -->
+        </div> <!-- /Modal Content -->
+      </div> <!-- /Modal Dialog -->
     </div> <!-- /Modal -->
 
 
