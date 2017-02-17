@@ -41,7 +41,7 @@
         <h1 class="display-2">Full Stack Attack</h1>
         <p class="lead">A One-Day Conference About All Things JavaScript!</p>
         <div class="btn-group mt-5" role="group" aria-label="Basic example">
-          <button type="button" class="btn btn-success btn-lg">Register Now</button>
+          <button type="button" class="btn btn-success btn-lg" data-toggle="modal" data-target="#registerModal">Register Now</button>
           <a class="btn btn-secondary btn-lg" href="#speakers">See Speakers</a>
         </div> <!-- /Button Group -->
       </div> <!-- /Container -->
@@ -79,6 +79,11 @@
       </div>
         </div> <!-- /Column 2-->
       </div> <!-- /2 Column Info -->
+
+      <!-- Callout Button -->
+      <div class="text-center my-5">
+        <button type="button" class="btn btn-outline-primary btn-lg my-5" data-toggle="modal" data-target="#registerModal">Don't Miss Out - Register Now!</button>
+      </div>
 
       <!-- Speakers -->
       <h1 id="speakers" class="display-4 text-center my-5 text-muted">Speakers</h1>
@@ -139,6 +144,11 @@
         </div> 
       </div> <!-- /Speakers -->
 
+      <!-- Callout Button -->
+      <div class="text-center my-5">
+        <button type="button" class="btn btn-outline-primary btn-lg my-5" data-toggle="modal" data-target="#registerModal">Don't Miss Out - Register Now!</button>
+      </div>
+
       <!-- Schedule -->
       <h1 class="display-4 text-center my-5 text-muted">Schedule</h1>
       <ul class="list-group">
@@ -173,7 +183,9 @@
       </ul> <!-- /Schedule -->
 
       <!-- Callout Button -->
-      <button type="button" class="btn btn-outline-primary btn-lg btn-block my-5">Don't Miss Out - Register Now!</button>
+      <div class="text-center my-5">
+        <button type="button" class="btn btn-outline-primary btn-lg my-5" data-toggle="modal" data-target="#registerModal">Don't Miss Out - Register Now!</button>
+      </div>
       <!-- Signup Form -->
       <hr>
       <div class="row py-2 text-muted">
@@ -226,6 +238,32 @@
       </div> <!-- /Footer -->
 
     </div> <!-- /.container -->
+
+<!--========================================
+    FORM MODAL
+==========================================-->
+    <div class="modal fade" id="registerModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Register for Full Stack Attack</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <p>Form Goes Here</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Save changes</button>
+          </div>
+        </div>
+      </div>
+    </div> <!-- /Modal -->
+
+
+
 
     <!-- jQuery first, then bootstrap js -->
     <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
