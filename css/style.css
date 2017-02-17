@@ -7,6 +7,9 @@
 .jumbotron {
 	background: url('../img/jumbo-bg.jpg');
 	background-size: cover;
+	text-align: center;
+	height: 650px;
+	padding-top: 150px;
 }
 
 .btn,
