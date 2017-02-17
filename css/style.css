@@ -1,3 +1,8 @@
 .btn {
 	cursor: pointer;
 }
+
+.card {
+	width: 70%;
+	margin: 0 auto;
+}
