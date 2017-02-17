@@ -4,15 +4,16 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Full Stack Conf</title>
+    <title>Full Stack Attack</title>
     <!-- bootstrap css -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
   </head>
 
   <body>
 
     <!-- Navbar -->
-  <nav class="navbar navbar-toggleable-xl navbar-inverse bg-primary">
+  <nav class="navbar navbar-toggleable-xl fixed-top navbar-inverse bg-primary">
     <div class="container">
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav">
@@ -34,14 +35,28 @@
       </div>
     </nav> <!-- /Navbar -->
 
+    <!-- Jumbotron -->
+    <div class="jumbotron jumbotron-fluid bg-primary text-white">
+      <div class="container text-sm-center pt-5">
+        <h1 class="display-2">Full Stack Attack</h1>
+        <p class="lead">A One-Day Conference About All Things JavaScript!</p>
+        <div class="btn-group mt-5" role="group" aria-label="Basic example">
+          <button type="button" class="btn btn-success btn-lg">Register Now</button>
+          <a class="btn btn-secondary btn-lg" href="#speakers">See Speakers</a>
+        </div> <!-- /Button Group -->
+      </div> <!-- /Container -->
+    </div> <!-- /Jumbotron -->
+
     <div class="container pt-3">
 
       <!-- About -->
         <div class="col-md-10 offset-md-1 text-center">
-          <h3 class="mb-3 text-center">About Full Stack Conf</h3>
+          <h3 class="mb-3 text-center">About Full Stack Attack</h3>
           <img class="img-fluid w-75 rounded mb-3 hidden-xs-down" src="img/pdx.jpg" alt="Portland">
-          <p class="text-center">The beautiful city of Portland, Oregon will be the host city for Full Stack Conf!</p>
-          <p class="text-center">Explore the future of JavaScript with a lineup of industry professionals. Discover new technologies to advance your career as a web developer.</p>
+          <div class="col-md-12">
+          <p class=>The beautiful city of Portland, Oregon will be the host city for Full Stack Attack</p>
+          <p class=>Explore the future of JavaScript with a lineup of industry professionals. Discover new technologies to advance your career as a web developer.</p>
+          </div>
         </div> <!-- /About -->
 
       <!-- 2 Column Info -->  
@@ -66,13 +81,15 @@
       </div> <!-- /2 Column Info -->
 
       <!-- Speakers -->
-      <h1 class="display-4 text-center my-4 text-muted">Speakers</h1>
+      <h1 id="speakers" class="display-4 text-center my-4 text-muted">Speakers</h1>
       [Speaker bios go here]
 
       <!-- Schedule -->
       <h1 class="display-4 text-center my-4 text-muted">Schedule</h1>
       [Conference schedule goes here]
 
+      <!-- Callout Button -->
+      <button type="button" class="btn btn-outline-primary btn-lg btn-block my-5">Don't Miss Out, Register Now!</button>
       <!-- Signup Form -->
       <hr>
       <div class="row py-2 text-muted">
@@ -81,7 +98,7 @@
           <p>JavaScript International brings affordable technology education to people everywhere to help the achieve their dreams and change the world.</p>
         </div> <!-- Column 1 -->
         <div class="col-md-6 col-xl-5 offset-xl-2">
-          <p><strong>Stay up-to-date on Full Stack Conf</strong></p>
+          <p><strong>Stay up-to-date on Full Stack Attack</strong></p>
           <div class="input-group">
             <input type="text" class="form-control" placeholder="Email">
             <span class="input-group-btn">
