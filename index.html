@@ -245,13 +245,21 @@
     <div class="modal fade" id="registerModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
       <div class="modal-dialog" role="document">
         <div class="modal-content">
-          <div class="modal-header">
+          <div class="modal-header bg-primary text-white">
             <h3 class="modal-title" id="exampleModalLabel">Register for Full Stack Attack</h3>
             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
               <span aria-hidden="true">&times;</span>
             </button>
           </div>
           <div class="modal-body">
+          <!-- Alert Box -->
+          <div class="alert alert-info alert-dismissible fade show" role="alert">
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+             <span aria-hidden="true">&times;</span>
+            </button>
+            <strong>Hurry Up!</strong> Early bird registration ends in 2 days!
+          </div> <!-- /Alert Box -->
+
             <!-- Registration Form -->
             <form>
               <h4 class="mb-3">Basic Info</h4>
@@ -260,17 +268,58 @@
                 <div class="">
                   <input class="form-control" type="text" placeholder="John Doe" id="name">
                 </div>
-              </div>
+              </div> <!-- /Name -->
               <div class="form-group">
                 <label for="email">Email:</label>
                 <div class="">
                   <input class="form-control" type="email" placeholder="email@example.com" id="email">
                 </div>
-              </div>
+              </div> <!-- /Email -->
               <div class="form-group">
                 <label for="role">Job Role:</label>
-                <select class="form-control" id="role" name="user-role"></select>
+                <select class="form-control" id="role" name="user-role">
+                  <option value="full stack js developer">Full Stack JavaScript Developer</option>
+                  <option value="front end developer">Front End Developer</option>
+                  <option value="back end developer">Back End Developer</option>
+                  <option value="designer">Designer</option>
+                  <option value="student">Student</option>
+                </select>
+              </div> <!-- /Job Role -->
+
+              <hr class="my-3">
+              <h4 class="mb-3">Which Topics Interest You Most?</h4>
+
+              <div class="form-check">
+                <label class="form-check-label">
+                <input type="checkbox" class="form-check-input">
+                  JavaScript Frameworks
+                </label>
               </div>
+              <div class="form-check">
+                <label class="form-check-label">
+                <input type="checkbox" class="form-check-input">
+                  JavaScript Libraries
+                </label>
+              </div>              
+              <div class="form-check">
+                <label class="form-check-label">
+                <input type="checkbox" class="form-check-input">
+                  Node.js
+                </label>
+              </div>
+              <div class="form-check">
+                <label class="form-check-label">
+                <input type="checkbox" class="form-check-input">
+                  Build Tools
+                </label>
+              </div>
+              <div class="form-check">
+                <label class="form-check-label">
+                <input type="checkbox" class="form-check-input">
+                  ES2015
+                </label>
+              </div>
+
             </form> <!-- /Registration Form -->
 
           </div> <!-- /Modal Body -->
