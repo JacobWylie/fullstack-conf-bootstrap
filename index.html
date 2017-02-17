@@ -10,7 +10,7 @@
     <link rel="stylesheet" type="text/css" href="css/style.css">
   </head>
 
-  <body>
+  <body id="home" data-spy="scroll" data-target=".navbar" data-offset="100">
 
     <!-- Navbar -->
   <nav class="navbar navbar-toggleable-xl fixed-top navbar-inverse bg-primary">
@@ -30,7 +30,7 @@
             <a class="nav-link" href="#schedule">Schedule</a>
           </li>
          </ul>
-          <a class="navbar-brand navbar-toggler-right hidden-sm-down mr-0" href="#https://www.w3schools.com/js/">JavaScript International</a>
+          <a class="navbar-brand navbar-toggler-right hidden-sm-down mr-0" href="https://www.w3schools.com/js/">JavaScript International</a>
         </div>
       </div>
     </nav> <!-- /Navbar -->
@@ -50,7 +50,7 @@
     <div class="container pt-3">
 
       <!-- About -->
-        <div class="col-md-10 offset-md-1 text-center my-5">
+        <div id="about" class="col-md-10 offset-md-1 text-center my-5">
           <h3 class="mb-4 text-center">About Full Stack Attack</h3>
           <p class=>Explore the future of JavaScript with a lineup of industry professionals. Discover new technologies to advance your career as a web developer.</p>
           <p class="mb-4">The beautiful city of Portland, Oregon will be the host city for Full Stack Attack</p>          
@@ -150,7 +150,7 @@
       </div>
 
       <!-- Schedule -->
-      <h1 class="display-4 text-center my-5 text-muted">Schedule</h1>
+      <h1 id="schedule" class="display-4 text-center my-5 text-muted">Schedule</h1>
       <ul class="list-group">
         <li class="list-group-item justify-content-between">
           <h4 class="list-group-item-heading">Keynote: Internet of Things<br><span class="speaker">NodeStradamus</span></h4>
